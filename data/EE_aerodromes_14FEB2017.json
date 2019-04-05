@@ -54,8 +54,8 @@
 		}, {
 			"icao": "EEKL",
 			"name": "Koigi",
-			"lat": "585146N",
-			"lon": "0254451E",
+			"lat": "585149N",
+			"lon": "0254359E",
 			"atc": "no",
 			"acc": "127.175",
 			"vfrpoint": []
