@@ -56,6 +56,14 @@
 		"airspace":   "data/airspace_25APR2019.json",
 		"EE_aerodromes": "data/EE_aerodromes_14FEB2017.json",
 		"FirPoints": "data/fir_points.json"
+	}, {
+		"validFrom":  "2019-05-23T00:00:00Z",
+		"aerodromes": "data/aerodromes_23MAY2019.xml",
+		"zzzzfields": "data/zzzz_fields_23MAY2019.xml",
+		"vfrpoints":  "data/EF_VFRREP_25APR2019.xml",
+		"airspace":   "data/airspace_25APR2019.json",
+		"EE_aerodromes": "data/EE_aerodromes_14FEB2017.json",
+		"FirPoints": "data/fir_points.json"
 	}
 	]
 } 
