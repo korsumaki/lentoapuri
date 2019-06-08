@@ -246,7 +246,7 @@ Muutoksia:
  * 
  */
 
-var log="Ohjelmakoodi päivätty: 2017-04-16<br>";
+var log="Ohjelmakoodi päivätty: 2019-06-08<br>";
 var CurrentVfrRepArray;
 var VfrRepArray;
 var OtherVfrRepArray; // Viro
@@ -3677,7 +3677,9 @@ function updateFlightPlanForm() {
 
 	other += "RMK/";
 	if (document.getElementById("planActivationMethod").value == "phoneOnGound") {
-		//other += "DEP " + BY_PHONE_STR + get_ACC_STR_by_country(getCountryByICAO(dep_icao) ) + " ";
+		if (getCountryByICAO(dep_icao) != "EF") { // Add string if not in Finland. In Finland by phone is default method, no need to mention it.
+			other += "DEP " + BY_PHONE_STR + get_ACC_STR_by_country(getCountryByICAO(dep_icao) ) + " ";
+		}
 	}
 	else if (document.getElementById("planActivationMethod").value == "rtfOnAir") {
 		var dep=document.getElementById("departure");
@@ -3701,7 +3703,9 @@ function updateFlightPlanForm() {
 	}
 
 	if (document.getElementById("planCompletionMethod").value == "phoneOnGound") {
-		//other += "ARR " + BY_PHONE_STR + get_ACC_STR_by_country(getCountryByICAO(dest_icao)) + " ";
+		if (getCountryByICAO(dest_icao) != "EF") { // Add string if not in Finland. In Finland by phone is default method, no need to mention it.
+			other += "ARR " + BY_PHONE_STR + get_ACC_STR_by_country(getCountryByICAO(dest_icao)) + " ";
+		}
 	}
 	else if (document.getElementById("planCompletionMethod").value == "rtfOnAir") {
 		var dest=document.getElementById("destination");
