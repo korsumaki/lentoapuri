@@ -2,7 +2,7 @@
 <gpx
 version="1.6"
 creator="Markku Korsumaki"
-created="2019-07-16"
+created="2019-08-19"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/1"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
@@ -24,8 +24,6 @@ name = kohtaan 18 tuleva DEP/ tai DEST/ paikannimi
 <aerodrome lat="604526N" lon="0264421E"><icao>ZZZZ</icao><name>Ummeljoki</name><atc>no</atc><acc>136.650</acc></aerodrome>
 <aerodrome lat="620143N" lon="0243955E"><icao>ZZZZ</icao><name>Mänttä</name><atc>no</atc><acc>132.325</acc></aerodrome>
 <aerodrome lat="621926N" lon="0224139E"><icao>ZZZZ</icao><name>Ilvesjoki</name><atc>no</atc><acc>127.100</acc></aerodrome>
-<aerodrome lat="623510N" lon="0222850E"><icao>ZZZZ</icao><name>Myllykylä Kurikka</name><atc>no</atc><acc>127.100</acc></aerodrome>
-<aerodrome lat="623410N" lon="0220339E"><icao>ZZZZ</icao><name>Norinkylä Teuva</name><atc>no</atc><acc>127.100</acc></aerodrome>
 <aerodrome lat="615351N" lon="0261116E"><icao>ZZZZ</icao><name>Leivonmäen Höystösensuo Joutsa</name><atc>no</atc><acc>132.325</acc></aerodrome>
 <aerodrome lat="630216N" lon="0220732E"><icao>ZZZZ</icao><name>Vähäkyrö</name><atc>no</atc><acc>127.100</acc></aerodrome>
 <aerodrome lat="613409N" lon="0280049E"><icao>ZZZZ</icao><name>Pistohiekka Puumala</name><atc>no</atc><acc>136.650</acc></aerodrome>
