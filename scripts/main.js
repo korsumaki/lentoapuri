@@ -1,3 +1,4 @@
+// @ts-check
 "use strict";
 
 /*
@@ -293,7 +294,7 @@ var UNOFFICIAL_AERODROME="ZZZZ";
 var UNOFFICIAL_AERODROME_INDEX=0; // This field index is used when ZZZZ place name was written manually, not from xml.
 
 //var BY_PHONE_ON_GROUND_STR = "PHONE ACC ";
-//var BY_PHONE_ON_GROUND_STR_WITH_PHONE = "PHONE ACC 032865172 "; 
+//var BY_PHONE_ON_GROUND_STR_WITH_PHONE = "PHONE ACC 033865172 ";
 //var BY_RTF_ON_AIR_STR = "RTF ACC "; // ACC freq is updated later
 
 var BY_PHONE_STR = "PHONE "; // for UI
@@ -369,11 +370,11 @@ function getCountryByICAO(icao) {
 function get_ACC_STR_WITH_PHONE_by_country(country) {
 	switch(country)
 	{
-	case 'EF': return "EFIN +35832865172 ";
+	case 'EF': return "EFIN +35833865172 ";
 	case 'EE': return "TALLINN ACC +3726258254 ";
 	default:
 		debug_log("ERROR: get_ACC_STR_WITH_PHONE_by_country: country '" + country + "' no yet handled.'");
-		return "EFIN +35832865172 ";
+		return "EFIN +35833865172 ";
 		break;
 	}
 }

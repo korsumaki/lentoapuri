@@ -1,3 +1,5 @@
+// @ts-check
+
 test( "starting test", function() {
 	ok( 1 == "1", "Passed!" );
 });
