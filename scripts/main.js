@@ -247,7 +247,7 @@ Muutoksia:
  * 
  */
 
-var log="Ohjelmakoodi päivätty: 2019-06-08<br>";
+var log="Ohjelmakoodi päivätty: 2020-07-07<br>";
 var CurrentVfrRepArray;
 var VfrRepArray;
 var OtherVfrRepArray; // Viro
@@ -308,11 +308,9 @@ var PYROTECHNICS_NOTE_REMARKS = "pyrotechnics on board";
 
 var OPENAVIATIONDATA_APIKEY = "mkXQV7UpiiBgOVjxbTzioYfpOlNVtEtg";
 
-var NAV_WRNG_map_link = "https://ais.fi/ais/bulletins/wrng1map.pdf";
-var NAV_WRNG_map_next_link = "https://www.ais.fi/ais/bulletins/wrng2map.pdf";
-var AUP_map_link = "https://www.ais.fi/cgi-bin/aup-kartta.cgi";
-var AUP_link = "https://www.ais.fi/aup/aup_uup.pdf";
-var AUP_next_link = "https://www.ais.fi/aup/aup_uup_nxt.pdf";
+var NAV_WRNG_map_link = "https://aviamaps.com/map?wrng";
+var NAV_WRNG_map_next_link = "https://aviamaps.com/map?wrng&next";
+
 
 var gEmptyAirspaceLat = "620000N";
 var gEmptyAirspaceLon = "0200000E";
@@ -3969,19 +3967,6 @@ function onClickNAV_WRNG_map() {
 function onClickNAV_WRNG_next_map() {
 	window.open( NAV_WRNG_map_next_link );
 }
-
-function onClickAup_map() {
-	window.open( AUP_map_link );
-}
-
-function onClickAup() {
-	window.open( AUP_link );
-}
-
-function onClickAupNext() {
-	window.open( AUP_next_link );
-}
-
 
 
 function getNotamLink(icao) {
