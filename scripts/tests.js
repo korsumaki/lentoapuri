@@ -507,7 +507,7 @@ test( "get_ACC_STR_by_country", function() {
 
 // get_ACC_STR_WITH_PHONE_by_country(country)
 test( "get_ACC_STR_WITH_PHONE_by_country", function() {
-	equal( get_ACC_STR_WITH_PHONE_by_country('EF'), 'EFIN +35832865172 ' );
+	equal( get_ACC_STR_WITH_PHONE_by_country('EF'), 'EFIN +35833865172 ' );
 	equal( get_ACC_STR_WITH_PHONE_by_country('EE'), 'TALLINN ACC +3726258254 ' );
 	//equal( get_ACC_STR_WITH_PHONE_by_country('ES'), 'ACC +35832865172 ' );
 });
