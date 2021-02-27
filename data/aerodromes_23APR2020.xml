@@ -2,7 +2,7 @@
 <gpx
 version="1.6"
 creator="Markku Korsumaki"
-created="2020-04-23"
+created="2021-01-28"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/1"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
@@ -13,7 +13,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <aerodrome lat="604807N" lon="0233844E"><icao>EFFO</icao><name>Forssa</name><atc>no</atc><acc>134.575</acc></aerodrome>
 <aerodrome lat="600513N" lon="0223119E"><icao>EFGE</icao><name>Genböle</name><atc>no</atc><acc>121.300</acc></aerodrome>
 <aerodrome lat="640647N" lon="0253015E"><icao>EFHP</icao><name>Haapavesi</name><atc>no</atc><acc>124.200</acc></aerodrome>
-<aerodrome lat="645812N" lon="0244218E"><icao>EFHL</icao><name>Hailuoto</name><atc>no</atc><acc>124.200</acc></aerodrome>
+<aerodrome lat="645811N" lon="0244217E"><icao>EFHL</icao><name>Hailuoto</name><atc>no</atc><acc>124.200</acc></aerodrome>
 <aerodrome lat="595044N" lon="0230456E"><icao>EFHN</icao><name>Hanko</name><atc>no</atc><acc>132.675</acc></aerodrome>
 <aerodrome lat="601514N" lon="0250239E"><icao>EFHF</icao><name>Helsinki-Malmi</name><atc>no</atc><acc>127.425</acc><vfrpoint>DEGER</vfrpoint><vfrpoint>NOKKA</vfrpoint><vfrpoint>RASTI</vfrpoint></aerodrome>
 <aerodrome lat="603916N" lon="0245252E"><icao>EFHV</icao><name>Hyvinkää</name><atc>no</atc><acc>127.425</acc></aerodrome>
