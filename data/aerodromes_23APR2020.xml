@@ -2,7 +2,7 @@
 <gpx
 version="1.6"
 creator="Markku Korsumaki"
-created="2021-01-28"
+created="2021-03-13"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/1"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
@@ -67,6 +67,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <aerodrome lat="640317N" lon="0244331E"><icao>EFYL</icao><name>Ylivieska</name><atc>no</atc><acc>126.300</acc></aerodrome>
 <aerodrome lat="682152N" lon="0232539E"><icao>EFET</icao><name>Enontekiö</name><atc>yes</atc><acc>126.100</acc><vfrpoint>GALDO</vfrpoint><vfrpoint>HIRVA</vfrpoint><vfrpoint>JOHKA</vfrpoint><vfrpoint>KATKA</vfrpoint><vfrpoint>OUNAS</vfrpoint></aerodrome>
 <aerodrome lat="615123N" lon="0244721E"><icao>EFHA</icao><name>Halli</name><atc>yes</atc><acc>132.325</acc><vfrpoint>HAAVI</vfrpoint><vfrpoint>PIHLA</vfrpoint><vfrpoint>TALVI</vfrpoint><vfrpoint>VILPU</vfrpoint></aerodrome>
+<aerodrome lat="601902N" lon="0245748E"><icao>EFHK</icao><name>Helsinki-Vantaa</name><atc>yes</atc><acc>127.425</acc><vfrpoint>HAGIS</vfrpoint><vfrpoint>KOLIS</vfrpoint><vfrpoint>LILJA</vfrpoint><vfrpoint>LINTU</vfrpoint><vfrpoint>OGELI</vfrpoint></aerodrome>
 <aerodrome lat="683639N" lon="0272450E"><icao>EFIV</icao><name>Ivalo</name><atc>yes</atc><acc>126.100</acc><vfrpoint>HAMPI</vfrpoint><vfrpoint>LAANI</vfrpoint><vfrpoint>MAHLA</vfrpoint><vfrpoint>VASKI</vfrpoint></aerodrome>
 <aerodrome lat="623932N" lon="0293728E"><icao>EFJO</icao><name>Joensuu</name><atc>yes</atc><acc>135.525</acc><vfrpoint>KONTI</vfrpoint><vfrpoint>LIPPI</vfrpoint><vfrpoint>POLVI</vfrpoint><vfrpoint>SUHMU</vfrpoint></aerodrome>
 <aerodrome lat="622403N" lon="0254022E"><icao>EFJY</icao><name>Jyväskylä</name><atc>yes</atc><acc>132.325</acc><vfrpoint>POHJA</vfrpoint><vfrpoint>RUOKE</vfrpoint><vfrpoint>SAHRA</vfrpoint><vfrpoint>TARVA</vfrpoint></aerodrome>
