@@ -22,7 +22,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 <aerodrome lat="611459N" lon="0285413E"><icao>EFIM</icao><name>Immola</name><atc>no</atc><acc>136.650</acc></aerodrome>
 <aerodrome lat="614643N" lon="0224258E"><icao>EFJM</icao><name>Jämijärvi</name><atc>no</atc><acc>127.100</acc></aerodrome>
 <aerodrome lat="641343N" lon="0234935E"><icao>EFKO</icao><name>Kalajoki</name><atc>no</atc><acc>126.300</acc></aerodrome>
-<aerodrome lat="635514N" lon="0240512E"><icao>EFKN</icao><name>Kannus</name><atc>no</atc><acc>126.300</acc></aerodrome>
 <aerodrome lat="622748N" lon="0222328E"><icao>EFKJ</icao><name>Kauhajoki</name><atc>no</atc><acc>127.100</acc></aerodrome>
 <aerodrome lat="630727N" lon="0230305E"><icao>EFKA</icao><name>Kauhava</name><atc>no</atc><acc>127.100</acc></aerodrome>
 <aerodrome lat="664257N" lon="0270926E"><icao>EFKM</icao><name>Kemijärvi</name><atc>no</atc><acc>126.100</acc></aerodrome>

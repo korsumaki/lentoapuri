@@ -2,7 +2,7 @@
 <gpx
 version="1.6"
 creator="Markku Korsumaki"
-created="2020-04-23"
+created="2021-04-15"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.topografix.com/GPX/1/1"
 xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
@@ -39,5 +39,6 @@ name = kohtaan 18 tuleva DEP/ tai DEST/ paikannimi
 <aerodrome lat="663130N" lon="0241315E"><icao>ZZZZ</icao><name>Ainola Pessalompolo</name><atc>no</atc><acc>124.200</acc></aerodrome>
 <aerodrome lat="611724N" lon="0264018E"><icao>ZZZZ</icao><name>Nurmaa Mäntyharju</name><atc>no</atc><acc>136.650</acc></aerodrome>
 <aerodrome lat="621016N" lon="0275207E"><icao>ZZZZ</icao><name>Varkaus</name><atc>no</atc><acc>135.525</acc></aerodrome>
+<aerodrome lat="635514N" lon="0240512E"><icao>ZZZZ</icao><name>Kannus</name><atc>no</atc><acc>126.300</acc></aerodrome>
 
 </gpx>
