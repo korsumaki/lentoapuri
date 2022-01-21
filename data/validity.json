@@ -86,7 +86,7 @@
 		"zzzzfields": "data/zzzz_fields_23APR2020.xml",
 		"vfrpoints":  "data/EF_VFRREP_22APR2021.xml",
 		"airspace":   "data/airspace_21JAN2022.json",
-		"EE_aerodromes": "data/EE_aerodromes_14FEB2017.json",
+		"EE_aerodromes": "data/EE_aerodromes_21JAN2022.json",
 		"FirPoints": "data/fir_points.json"
 	}
 	]
