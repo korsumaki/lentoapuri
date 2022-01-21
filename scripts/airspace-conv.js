@@ -245,14 +245,14 @@ function conversion(data) {
 	outputEnd();
 	
 	// Check data with geojsonlint	
-	$.ajax({
+	/*$.ajax({
 	    url: 'http://geojsonlint.com/validate',
 	    type: 'POST',
 	    data: outputJson,
 	    dataType: 'json',
 	    success: processSuccess,
 	    error: processError
-	});
+	});*/
 	
 }
 
