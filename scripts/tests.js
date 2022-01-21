@@ -782,9 +782,89 @@ test( "getCrossedAirspaces", function() {
 
 });
 
+/*
+ * Test case for iterating ellipse height and width
+ * This is used for creating airspaces (in Estonian) which are defined as circle.
+*/
+/*
+test( "iterateEllipseHeightAndWidth", function() {
 
+	//Within 20 NM radius from EETN ARP
+		// 592448N 0244957E
+	//Within 20 NM radius from EEEI ARP (except KUUSIKU parachute jumping area)
+		// 591544N 0241307E
+	//Rapla 6 NM 585920N 0244313E
 
+	var targetDistance_NM = 6;
+	
+	var center_lat = DMS_to_Decimal("585920N"); // north
+	var center_lon = DMS_to_Decimal("0244313E"); // east
 
+	var top_lat    = center_lat;// + 0.33311; //DMS_to_Decimal("582927N"); // north XXX
+	var top_lon    = center_lon;                // east
 
+	var right_lat  = center_lat; // north
+	var right_lon  = center_lon;// + 0.6546445; //DMS_to_Decimal("0266113E"); // east XXX
 
+	var step_size = 0.1;
+	var direction = 1.0;
+	top_lat = center_lat;
+	while (step_size > 0.0000001) {
+		top_lat += direction * step_size;
+		var diff = calcDistanceFrom( center_lat, center_lon, top_lat, top_lon) * 1000/1852 - targetDistance_NM;
+		if (direction > 0 && diff > 0) {
+			direction = -direction;
+			step_size /= 10;
+		}
+		if (direction < 0 && diff < 0) {
+			direction = -direction;
+			step_size /= 10;
+		}
+	}
 
+	step_size = 0.1;
+	direction = 1.0;
+	right_lon = center_lon;
+	while (step_size > 0.0000001) {
+		right_lon += direction * step_size;
+		var diff = calcDistanceFrom( center_lat, center_lon, right_lat, right_lon) * 1000/1852 - targetDistance_NM;
+		if (direction > 0 && diff > 0) {
+			direction = -direction;
+			step_size /= 10;
+		}
+		if (direction < 0 && diff < 0) {
+			direction = -direction;
+			step_size /= 10;
+		}
+	}
+
+	equal( calcDistanceFrom( center_lat, center_lon, top_lat, top_lon) * 1000/1852 - targetDistance_NM, 0 );
+	equal( calcDistanceFrom( center_lat, center_lon, right_lat, right_lon) * 1000/1852 - targetDistance_NM, 0 );
+
+	// Decimal presentation
+	console.log("COORD DIFF center_lat=" + center_lat);
+	console.log("COORD DIFF center_lon=" + center_lon);
+	console.log("COORD DIFF top_lat=" + (top_lat-center_lat));
+	console.log("COORD DIFF right_lon=" + (right_lon-center_lon));
+});
+*/
+/*
+	Within 20 NM radius from EETN ARP
+		592448N 0244957E
+COORD DIFF center_lat=59,413333333333334
+COORD DIFF center_lon=24,8325
+COORD DIFF top_lat=0,333108799999998
+COORD DIFF right_lon=0,6546446000000081
+
+	Within 20 NM radius from EEEI ARP (except KUUSIKU parachute jumping area)
+COORD DIFF center_lat=59,26222222222222
+COORD DIFF center_lon=24,218611111111112
+COORD DIFF top_lat=0,333108799999998
+COORD DIFF right_lon=0,651738800000011
+
+Rapla 6NM
+COORD DIFF center_lat=58,98888888888889
+COORD DIFF center_lon=24,720277777777778
+COORD DIFF top_lat=0,09993270000001786
+COORD DIFF right_lon=0,19396710000000184
+	*/
