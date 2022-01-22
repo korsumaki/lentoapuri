@@ -247,7 +247,7 @@ Muutoksia:
  * 
  */
 
-var log="Ohjelmakoodi päivätty: 2020-07-07<br>";
+var log="Ohjelmakoodi päivätty: 2022-01-22<br>";
 var CurrentVfrRepArray;
 var VfrRepArray;
 var OtherVfrRepArray; // Viro
@@ -3400,6 +3400,7 @@ function updateCrossedAirspaces(array, airspace) {
 		if (array[i] !== null) {
 			if (prev.lat != array[i].lat || prev.lon != array[i].lon) {
 				a = a.concat(getCrossedAirspaces(array[i].lon,array[i].lat, prev.lon,prev.lat,  airspace));
+				prev = array[i]; // Update previous waypoint to be able to check correct airspaces
 			}
 		}
 	}
