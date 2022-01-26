@@ -88,6 +88,14 @@
 		"airspace":   "data/airspace_21JAN2022.json",
 		"EE_aerodromes": "data/EE_aerodromes_21JAN2022.json",
 		"FirPoints": "data/fir_points.json"
+	}, {
+		"validFrom":  "2022-01-27T00:00:00Z",
+		"aerodromes": "data/aerodromes_22APR2021.xml",
+		"zzzzfields": "data/zzzz_fields_23APR2020.xml",
+		"vfrpoints":  "data/EF_VFRREP_22APR2021.xml",
+		"airspace":   "data/airspace_21JAN2022.json",
+		"EE_aerodromes": "data/EE_aerodromes_27JAN2022.json",
+		"FirPoints": "data/fir_points.json"
 	}
 	]
 } 
