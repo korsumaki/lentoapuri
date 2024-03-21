@@ -330,7 +330,8 @@
 			</div>
 			<!-- "https://www.ais.fi/fi/lennonvalmistelu-ja-lentosuunnitelmat/fpl-lomake" -->
 			<!--form method="POST" target="_blank" action="https://www.ais.fi/user/submit-flight-plan" -->
-			<form method="GET" action="https://www.ais.fi/user/submit-flight-plan">
+			<!--form method="GET" action="https://www.ais.fi/user/submit-flight-plan"-->
+			<form method="POST" action="">
 				<input type="hidden" id="form_id" name="ilma_aluksen_tunnus"> <!-- id -->
 				<input type="hidden" id="form_rules" name="rules">
 				<input type="hidden" id="form_type" name="type">
@@ -368,8 +369,24 @@
 			<p><a href="linkit.html" rel="external" data-ajax="false">Ilmailulinkit</a></p>
 			
 		</div><!-- content -->
-
 	</div>
+
+	<div data-role="page" id="page-raw-plan"> 
+		<div data-role="header" data-position="inline" data-theme="a"> <!-- b -->
+			<a href="#page-main" data-direction="reverse" data-icon="arrow-l">Takaisin</a>
+			<h1>Raaka FPL</h1>
+		</div> 
+		<div data-role="content">
+			<div class="ui-field-contain">
+				<label for="raw-fpl-field">Raaka FPL</label>
+				<textarea id="raw-fpl-field" type="textarea" data-mini="true"></textarea>
+			</div> <!-- fieldcontain -->
+			<div class="ui-field-contain">
+				<label for="button-to-ais-webpage">FPL lomake</label>
+				<a href="https://www.ais.fi/user/submit-flight-plan" target="_blank" id="button-to-ais-webpage" class="ui-btn ui-corner-all ui-shadow ui-mini ">ais.fi FPL lomake...</a>
+			</div> <!-- fieldcontain -->
+		</div> <!-- content -->
+	</div> 
 
 	<div data-role="page" id="page-stored-plan"> 
 		<div data-role="header" data-position="inline" data-theme="a"> <!-- b -->

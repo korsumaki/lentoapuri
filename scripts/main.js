@@ -308,6 +308,7 @@ var PYROTECHNICS_NOTE_REMARKS = "pyrotechnics on board";
 
 var OPENAVIATIONDATA_APIKEY = "mkXQV7UpiiBgOVjxbTzioYfpOlNVtEtg";
 
+// TODO update to flyk.com, test
 var NAV_WRNG_map_link = "https://aviamaps.com/map?wrng";
 var NAV_WRNG_map_next_link = "https://aviamaps.com/map?wrng&next";
 
@@ -356,7 +357,7 @@ function getCountryByICAO(icao) {
 	if (icao.length != 4) {
 		debug_log("ERROR: getCountryByICAO: icao='" + icao + "' is not valid. Expected 4 characters.");
 	}
-	var country = icao.substr(0,2).toUpperCase();;
+	var country = icao.substr(0,2).toUpperCase();
 	// Let's assume ZZZZ fields are in Finland.
 	if (country == 'ZZ') {
 		country = 'EF'; 
@@ -3790,8 +3791,72 @@ function updateFlightPlanForm() {
 	if (showAlertText) {
 		alert(alertText);
 	}
-	
-	return true;
+
+	// Fill text field
+	var br = "\n";
+	var fplString = $("#form_id").val();
+	fplString += " " + $("#form_rules").val();
+	fplString += " " + $("#form_type").val();
+	fplString += " " + $("#form_aircraft").val();
+	fplString += " " + $("#form_cat").val();
+	fplString += " " + $("#form_equipment").val();
+	fplString += "/" + $("#form_ssr").val() + br;
+
+	fplString += $("#form_ad").val();
+	fplString += " " + $("#form_time").val() + br;
+	fplString += $("#form_spd").val() ;
+	fplString += $("#form_speed").val();
+	fplString += " " + $("#form_lv").val();
+	fplString += $("#form_level").val();
+
+	fplString += " " + $("#form_route").val() + br;
+	fplString += $("#form_dad").val();
+	fplString += " " + $("#form_eet").val() + br;
+	fplString += $("#form_other").val() + br;
+	fplString += $("#form_endurance").val();
+	fplString += " " + $("#form_person").val();
+	fplString += " " + $("#form_markings").val() + br;
+	fplString += $("#form_remarks").val() + br;
+	fplString += $("#form_e").val() + br;
+	// Change text so far to CAPITAL
+	fplString = fplString.toUpperCase();
+
+	fplString += $("#form_pic").val();
+	fplString += " " + $("#form_tel").val();
+	fplString += "/" + $("#form_filed").val() + br;
+
+/*	var fplString = "form_id" + ": " + $("#form_id").val() + br;
+	fplString += "form_rules" + ": " + $("#form_rules").val() + br;
+	fplString += "form_type" + ": " + $("#form_type").val() + br;
+	fplString += "form_aircraft" + ": " + $("#form_aircraft").val() + br;
+	fplString += "form_cat" + ": " + $("#form_cat").val() + br;
+	fplString += "form_equipment" + ": " + $("#form_equipment").val() + br;
+	fplString += "form_ssr" + ": " + $("#form_ssr").val() + br;
+	fplString += "form_ad" + ": " + $("#form_ad").val() + br;
+	fplString += "form_time" + ": " + $("#form_time").val() + br;
+	fplString += "form_spd" + ": " + $("#form_spd").val() + br;
+	fplString += "form_speed" + ": " + $("#form_speed").val() + br;
+	fplString += "form_lv" + ": " + $("#form_lv").val() + br;
+	fplString += "form_level" + ": " + $("#form_level").val() + br;
+	fplString += "form_route" + ": " + $("#form_route").val() + br;
+	fplString += "form_dad" + ": " + $("#form_dad").val() + br;
+	fplString += "form_eet" + ": " + $("#form_eet").val() + br;
+	fplString += "form_other" + ": " + $("#form_other").val() + br;
+	fplString += "form_endurance" + ": " + $("#form_endurance").val() + br;
+	fplString += "form_person" + ": " + $("#form_person").val() + br;
+	fplString += "form_markings" + ": " + $("#form_markings").val() + br;
+	fplString += "form_remarks" + ": " + $("#form_remarks").val() + br;
+	fplString += "form_e" + ": " + $("#form_e").val() + br;
+	fplString += "form_pic" + ": " + $("#form_pic").val() + br;
+	fplString += "form_tel" + ": " + $("#form_tel").val() + br;
+	fplString += "form_filed" + ": " + $("#form_filed").val() + br;
+*/
+	console.log(fplString);
+	$('#raw-fpl-field').val( fplString );
+	window.open( "#page-raw-plan", "_self" );
+
+	return false;
+	//return true;
 }
 
 
